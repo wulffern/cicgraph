@@ -1,0 +1,84 @@
+Mathematics:
+
+Physics:
+  _dependsOn: Mathematics
+
+Analog:
+  _dependsOn: Physics
+  Basics:
+    Transistors:
+    Amplifiers:
+        Common Source:
+        Source Follower:
+        Common Gate:
+    Current Mirrors:
+      Cascode:
+      Active cascode:
+  Analog Circuits:
+    Filters:
+      Active RC:
+      Gm-C:
+      Switched-capacitor:
+    OPAMP:
+      OTA:
+        Current Mirror OTA:
+        Folded cascode:
+        Two-stage Miller:
+        Telescopic:
+      Buffer:
+        Source follower:
+        Class-AB:
+  Analog Systems:
+    LNA:
+    MIXER:
+      Passive:
+      Gilbert:
+    Voltage Reference:
+      VT reference:
+      Bandgaps:
+    Voltage regulators:
+      Linear regulators:
+        LDO:
+        Digital LDO:
+      Switched regulators:
+        DC/DC:
+          Inductive Buck:
+          Capacitve Buck:
+          Inductive Boost:
+          Capacitive Boost:
+
+    ADC:
+      Nyquist:
+        Pipeline:
+        SAR:
+        Flash:
+        Folding:
+      Noise Shaping:
+        Sigma Delta:
+          Incremental:
+          Continuous time:
+          Discrete time:
+          Complex:
+          Error Feedback:
+      Hybrid:
+        NS-SAR:
+        Zoom:
+
+
+    Freq Synthesis:
+      PLL:
+        Analog PLL:
+        Digital PLL:
+      DLL:
+      FLL:
+      RCOSC:
+      XOSC:
+
+Digital:
+  _dependsOn: Analog
+  Gates:
+    _dependsOn: Transistors
+
+
+Embedded:
+  _dependsOn: Digital
